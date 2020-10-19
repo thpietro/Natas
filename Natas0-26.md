@@ -1,6 +1,8 @@
 # Natas 0::26
 **TheHappyPietro**
+
 [_gihub_](https://github.com)
+
 [_instagram_](https://instagram.com)
 
 [Natas](https://overthewire.org/wargames/natas/) è un wargame ideato da [OverTheWire](https://overthewire.org). Un wargame (o gioco di guerra) è una sfida di cyber-sicurezza in cui i concorrenti devono sfruttare o difendere una vulnerabilità in un sistema o in una applicazione. 
