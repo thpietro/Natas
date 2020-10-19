@@ -10,23 +10,34 @@ _Da [Wikipedia](https://en.wikipedia.org/wiki/Wargame_(hacking))._
 
 ## Natas 0 :: 1
 > _User:_ natas0
+
 > _Pass:_ natas0
+
 > _URL:_ http://natas0.natas.labs.overthewire.org
 
 Iniziamo! 
+
 ![Front Page: Natas0](https://i.ibb.co/F4F0D0H/natas0-1.png)
+
+
 Una volta raggiunta la pagina ci trovereme un messaggio: «Puoi trovare la password in questa pagina». Non vedo nulla. Controlliamo meglio: _Tasto destro→Visualizza Sorgente Pagina._
 Eccola!  
+
+
 ![Solution: Natas0](https://i.ibb.co/ckrDhMd/natas0-2.png)
 
 ## Natas 1 :: 2
 > _User:_ natas1
+
 > _Pass:_ gtVrDuiDfck831PqWsLEZy5gyDz1clto
+
 > _URL:_ http://natas1.natas.labs.overthewire.org
 
 ![](https://i.postimg.cc/JnBNJHTG/natas1-1.png)
+
 Come ci comunica il messaggio, la minestra è la stessa, il tasto destro è bloccato. Non può certo essere un problema! Con la combinazione **CTRL+C** (o un'altra delle tantissime), accediamo agli strumenti di sviluppo.
 ![](https://i.postimg.cc/jjnc612x/natas1-3.png)
+
 Fatto!
 
 ## Natas 2 :: 3
