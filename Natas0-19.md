@@ -20,7 +20,7 @@ Iniziamo!
 ![Front Page: Natas0](https://i.ibb.co/F4F0D0H/natas0-1.png)
 
 
-Una volta raggiunta la pagina ci trovereme un messaggio: «Puoi trovare la password in questa pagina». Non vedo nulla. Controlliamo meglio: _Tasto destro→Visualizza Sorgente Pagina._
+La pagine principale contine un messaggio: «Puoi trovare la password in questa pagina». Per esserne sicuri controlliamo il codice sorgente: _Tasto destro→Visualizza Sorgente Pagina._
 Eccola!  
 
 
@@ -35,7 +35,8 @@ Eccola!
 
 ![](https://i.postimg.cc/JnBNJHTG/natas1-1.png)
 
-Come ci comunica il messaggio, la minestra è la stessa, il tasto destro è bloccato. Non può certo essere un problema! Con la combinazione **CTRL+C** (o un'altra delle tantissime), accediamo agli strumenti di sviluppo.
+Il messaggio ci comunicherà che il tasto destro destro è disabilitato. Sicuramente questo non può essere un problema. **CTRL+Shift+C** per aprire gli strumenti sviluppatore e visualizzare il codice sorgente:
+
 ![](https://i.postimg.cc/jjnc612x/natas1-3.png)
 
 Fatto!
@@ -49,15 +50,15 @@ Fatto!
 
 ![](https://i.postimg.cc/ydgN8FLr/natas3-1.png)
 
-"Non c'è nulla in questa pagina". Per esserne sicuri, controlliamo: **CTRL+Shift+C**. 
+"Non c'è nulla in questa pagina". Controlliamo meglio nel codice sorgente:
 
 ![](https://i.postimg.cc/fbdFWyxf/natas2-2.png) 
 
-Ma allora non è vero che non c'è nulla! il file _files/pixel.png_ contiene lettaralmente un singolo pixel. Nulla che ci possa essere di aiuto. Vediamo cosa altro contiene la cartella _files/_.
+Il file _files/pixel.png_ contiene lettaralmente un singolo pixel, nulla che ci possa essere di aiuto. Vediamo cosa altro contiene la cartella _files/_:
 
 ![](https://i.postimg.cc/FscDJ8fh/natas2-3.png)
 
-Ecco! il file _users.txt_ contiene le credenziali di _natas3_
+Il file _users.txt_ contiene le credenziali di _natas3_
 
 ## Natas 3 :: 4
 > _User:_ natas3
@@ -66,15 +67,16 @@ Ecco! il file _users.txt_ contiene le credenziali di _natas3_
 
 > _URL:_ http://natas3.natas.labs.overthewire.org
 
-Questa volta il messaggio "_There is nothing on this page_" sempra avere del vero:
+Solito messaggio: "_There is nothing on this page_"
 
 ![](https://i.postimg.cc/5N0f45j5/natas3-2.png)
 
-"_Nemmeno Google potrà trovarla questa volta_". Idea! Google non trova i file definiti in _robots.txt/_; quindi rechiamoci qui.
+Nel codice sorgente: "_Nemmeno Google potrà trovarla questa volta_". Per impedire ai crawler (tra qui google bot) di indicizzare determinate directory e file si utilizza il '_protocollo di esclusione robot_'. Questo è utilizzabile grazie a un insieme di regole scritte nel file _robots.txt_.
 
+_robots.txt:_
 ![](https://i.postimg.cc/1X4RjDqK/natas3-3.png)
 
-Perfetto! Nessun crawler può trovare _s3cr3t/_. Ora noi l'abbiamo appena fatto.
+Nessun crawler può trovare _s3cr3t/_. Ora noi l'abbiamo appena fatto.
 _s3cr3t/_ contiene un solo file: _users.txt_; questo file contiene la pswd per natas4!
 
 ## Natas 4 :: 5
